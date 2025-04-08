@@ -1,0 +1,24 @@
+# Ignore compiled files (no extension + executable)
+# Will not ignore valid source files like '1005.c'
+# Assumes compiled files don't have extensions
+
+# Executables with no extension (ignore files that are not .c/.h/.py/etc)
+# Match files that don't have an extension
+*
+
+# But keep source code files
+!*.c
+!*.cpp
+!*.py
+!*.java
+!*.md
+!*.gitignore
+
+# Ignore typical build outputs and IDE folders
+*.o
+*.out
+*.exe
+__pycache__/
+*.pyc
+.vscode/
+.idea/
